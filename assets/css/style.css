@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Lexend+Deca:wght@400;800&display=swap');
+
+
+:root {
+    --Holtwood: 'Holtwood One SC', serif;
+    --Lexend: 'Lexend Deca', sans-serif;
+    --Orange:#FF914D;
+    --Gray:#545454;
+}
+
+._icon{
+    width: 50%;
+}
+
+#_tip{
+    color: var(--Orange);
+}
+
+#_esquisa{
+    color: var(--Gray);
+}
+
+#_logo{
+    font-size: 6em;
+}
+
+._options{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    width: 100%;
+}
+
+._img{
+    width: 20%;
+}
