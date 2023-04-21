@@ -14,6 +14,18 @@
   --GrayA: rgba(84, 84, 84, 0.5);
 }
 
+._pointer{
+  cursor: pointer;
+}
+
+._input{
+  border-radius: 7px;
+  border: 2px solid var(--GrayA);
+  font-size: 1.2em;
+  color: var(--Gray);
+}
+
+/*Index*/
 form {
   position: relative;
   display: flex;
@@ -58,28 +70,21 @@ form {
 #_searcher {
   width: 70%;
   padding: 1em 3em;
-  border-radius: 7px;
-  border: 2px solid var(--GrayA);
-  font-size: 1.2em;
-  color: var(--Gray);
 }
 
 ._lupe {
   position: absolute;
   left: 17%;
-  cursor: pointer;
 }
 
 ._cam {
   position: absolute;
   right: 18%;
-  cursor: pointer;
 }
 
 ._mic {
   position: absolute;
   right: 21%;
-  cursor: pointer;
 }
 
 #_other-options {
@@ -102,16 +107,15 @@ form {
 
 #_other-options div i {
   position: absolute;
+  top: 63%;
 }
 
 ._image {
   left: 23%;
-  top: 63%;
 }
 
 ._video {
-  left: 61%;
-  top: 63%;
+  left: 61%;  
 }
 
 #_footer{
@@ -123,4 +127,24 @@ form {
 
 #_footer img{
   width: 18%;
+}
+
+/*Result*/
+
+#_initial-bar{
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+._flex{
+  display: flex;
+}
+
+#_logo{
+  width: 12%;
+} 
+
+#_result{
+  padding: 1em 3em;
 }
