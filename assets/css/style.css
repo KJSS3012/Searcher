@@ -1,36 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Lexend+Deca:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Lexend+Deca:wght@400;800&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 :root {
-    --Holtwood: 'Holtwood One SC', serif;
-    --Lexend: 'Lexend Deca', sans-serif;
-    --Orange:#FF914D;
-    --Gray:#545454;
+  --Holtwood: "Holtwood One SC", serif;
+  --Lexend: "Lexend Deca", sans-serif;
+  --Orange: #ff914d;
+  --Gray: rgb(84, 84, 84);
+  --GrayA: rgba(84, 84, 84, 0.5);
 }
 
-._icon{
-    width: 50%;
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#_tip{
-    color: var(--Orange);
+._orange {
+  color: var(--Orange);
 }
 
-#_esquisa{
-    color: var(--Gray);
+._gray {
+  color: var(--Gray);
 }
 
-#_logo{
-    font-size: 6em;
+#_container {
+  padding: 1.5em;
 }
 
-._options{
-    display: flex;
-    justify-content: flex-end;
-    gap: 1em;
-    width: 100%;
+#_header {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
 }
 
-._img{
-    width: 20%;
+._options {
+  width: 3em;
+  cursor: pointer;
+}
+
+#_main {
+  text-align: center;
+}
+
+#_title {
+  font-family: var(--Holtwood);
+  font-size: 3.5em;
+  padding: 1em 0 0.5em 0;
+}
+
+#_searcher {
+  width: 70%;
+  padding: 1em 3em;
+  border-radius: 7px;
+  border: 2px solid var(--GrayA);
+  font-size: 1.2em;
+  color: var(--Gray);
+}
+
+._lupe {
+  position: absolute;
+  left: 17%;
+  cursor: pointer;
+}
+
+._cam {
+  position: absolute;
+  right: 18%;
+  cursor: pointer;
+}
+
+._mic {
+  position: absolute;
+  right: 21%;
+  cursor: pointer;
+}
+
+#_other-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 3% 0;
+}
+
+._input-options {
+  width: 70%;
+  padding: 0.5em 3em;
+  border-radius: 7px;
+  border: 2px solid var(--GrayA);
+  font-size: 1.2em;
+  color: var(--Gray);
+  cursor: pointer;
+}
+
+#_other-options div i{
+    position: absolute;
 }
