@@ -31,6 +31,7 @@ form {
 
 #_container {
   padding: 1.5em;
+  position: relative;
 }
 
 #_header {
@@ -51,7 +52,7 @@ form {
 #_title {
   font-family: var(--Holtwood);
   font-size: 3.5em;
-  padding: 1em 0 0.5em 0;
+  padding: 0.5em 0 0.5em 0;
 }
 
 #_searcher {
@@ -99,6 +100,27 @@ form {
   cursor: pointer;
 }
 
-#_other-options div i{
-    position: absolute;
+#_other-options div i {
+  position: absolute;
+}
+
+._image {
+  left: 23%;
+  top: 63%;
+}
+
+._video {
+  left: 61%;
+  top: 63%;
+}
+
+#_footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+
+#_footer img{
+  width: 18%;
 }
