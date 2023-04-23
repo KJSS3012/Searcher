@@ -219,6 +219,9 @@ a {
   padding-bottom: 8px;
 }
 
+._visited{
+  color: #545454;
+}
 a:visited {
   color: #545454;
 }
