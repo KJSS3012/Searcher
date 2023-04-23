@@ -4,25 +4,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
   --Holtwood: "Holtwood One SC", serif;
   --Lexend: "Lexend Deca", sans-serif;
   --Orange: #ff914d;
+  --OrangeA: rgba(255, 145, 77, 0.4);
   --Gray: rgb(84, 84, 84);
   --GrayA: rgba(84, 84, 84, 0.5);
 }
 
-._pointer{
+._pointer {
   cursor: pointer;
 }
 
-._input{
+._input {
   border-radius: 7px;
   border: 2px solid var(--GrayA);
   font-size: 1.2em;
   color: var(--Gray);
+}
+
+._flex {
+  display: flex;
+  position: relative;
+}
+
+._gap {
+  gap: 5%;
 }
 
 /*Index*/
@@ -115,36 +126,137 @@ form {
 }
 
 ._video {
-  left: 61%;  
+  left: 61%;
 }
 
-#_footer{
+#_footer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3%;
 }
 
-#_footer img{
+#_footer img {
   width: 18%;
 }
 
 /*Result*/
 
-#_initial-bar{
-  width: 100%;
+#_initial-bar {
   align-items: baseline;
   justify-content: space-between;
 }
 
-._flex{
-  display: flex;
+#_logo {
+  width: 60px;
 }
 
-#_logo{
-  width: 12%;
-} 
-
-#_result{
+#_result {
   padding: 1em 3em;
+  width: 30em;
+}
+
+._result-section {
+  padding: 3% 0 2% 5em;
+}
+
+._b-nav {
+  font-family: var(--Lexend);
+  color: var(--Gray);
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+._b-nav:focus {
+  color: var(--Orange);
+  border-bottom: 2px solid var(--Orange);
+}
+
+._select {
+  position: absolute;
+  top: 0.5em;
+  right: 2.75em;
+}
+
+._select2 {
+  position: absolute;
+  top: 0.5em;
+  right: 3em;
+}
+
+._select3 {
+  position: absolute;
+  top: 0.5em;
+  right: 3.75em;
+}
+
+._select4 {
+  position: absolute;
+  top: 0.5em;
+  right: 4em;
+}
+
+hr {
+  border-color: var(--OrangeA);
+}
+
+h4,
+a {
+  font-family: var(--Lexend);
+  font-weight: bold;
+}
+
+h4 {
+  color: #ff914d;
+  padding-bottom: 8px;
+}
+
+a {
+  font-size: 18px;
+  color: #ff6100;
+  padding-bottom: 8px;
+}
+
+a:visited {
+  color: #545454;
+}
+
+p {
+  padding-top: 5px;
+  font-family: var(--Lexend);
+  text-align: justify;
+}
+._link {
+  width: 70%;
+  padding-bottom: 2%;
+}
+
+._navbar {
+  gap: 1%;
+}
+
+._nav {
+  background-color: #ff6100;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  grid-area: 3%;
+  font-family: var(--Lexend);
+}
+
+._nav:focus {
+  background-color: var(--Gray);
+}
+
+._cross {
+  position: absolute;
+  left: 16em;
+  color: #ff6100;
+  cursor: pointer;
 }
