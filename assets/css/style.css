@@ -102,12 +102,12 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 5%;
   padding: 3% 0;
 }
 
 ._input-options {
-  width: 70%;
+  width: 90%;
   padding: 0.5em 3em;
   border-radius: 7px;
   border: 2px solid var(--GrayA);
@@ -122,11 +122,11 @@ form {
 }
 
 ._image {
-  left: 23%;
+  left: 48vh;
 }
 
 ._video {
-  left: 61%;
+  left: 119vh;
 }
 
 #_footer {
