@@ -86,6 +86,7 @@ form {
 #_searcher {
   width: 70%;
   padding: 1em 3em;
+  font-family: var(--Lexend);
 }
 
 ._lupe {
@@ -120,6 +121,7 @@ form {
   font-size: 1.2em;
   color: var(--Gray);
   cursor: pointer;
+  font-family: var(--Lexend);
 }
 
 #_other-option div{
@@ -164,6 +166,7 @@ form {
 #_result {
   padding: 1em 3em;
   width: 30em;
+  font-family: var(--Lexend);
 }
 
 ._result-section {
