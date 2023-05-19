@@ -1,4 +1,46 @@
+:root{
+    --orange: #FF914D;
+    --gray: #545454;
+}
+
+._img-options{
+    width: 5vh;
+}
+
+._pointer{
+    cursor: pointer;
+}
+
+._top-g{
+    top: 17vh;
+}
+
+._top-m{
+    top: 11vh;
+}
 ._dropdown-item{
     display: none;
-    padding: 2% 0;
+}
+
+._title{
+    font-size: 8vh;
+    color: var(--gray);
+}
+
+._title span{
+    color: var(--orange);
+}
+
+main{
+    padding: 5% 0 0 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+._img-ads{
+    width: 33vh;
+}
+
+footer{
+    background-color: #D9D9D9;
 }

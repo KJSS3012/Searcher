@@ -12,31 +12,59 @@
 </head>
 
 <body>
+    <!--HEADER-->
     <header class="container-fluid">
         <section class="d-flex justify-content-end p-5 gap-4">
             <div class="d-flex flex-column">
-                <img src="assets/img/index/dropdown/more.svg" class="_dropdown">
-                <img src="assets/img/index/dropdown/image.svg" class="_dropdown-item">
-                <img src="assets/img/index/dropdown/video.svg" class="_dropdown-item">
+                <img src="assets/img/index/dropdown/more.svg" class="_dropdown position-relative _pointer _img-options"
+                    title="Mais opções">
+                <img src="assets/img/index/dropdown/image.svg"
+                    class="_dropdown-item position-absolute _top-m _pointer _img-options" title="Imagens">
+                <img src="assets/img/index/dropdown/video.svg"
+                    class="_dropdown-item position-absolute _top-g _pointer _img-options" title="Video">
             </div>
             <div>
-                <img src="assets/img/index/profile.svg" +->
+                <img src="assets/img/index/profile.svg" title="Perfil" class="_pointer _img-options">
             </div>
         </section>
     </header>
+    <!--END HEADER-->
+
+    <!--MAIN-->
+    <main class="text-center">
+        <h1 class="_title"><span>TIP</span>esquisa</h1>
+
+        <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+        </div>
+
+        <div class="d-flex justify-content-center gap-4 pt-5">
+            <img src="assets/img/index/advertising/Prime.svg" title="Prime Video" class="_pointer _img-ads">
+            <img src="assets/img/index/advertising/BK.svg" title="Burger King" class="_pointer _img-ads">
+            <img src="assets/img/index/advertising/Americanas.svg" title="Americanas" class="_pointer _img-ads">
+        </div>
+    </main>
+    <!--END MAIN-->
+
+    <!--FOOTER-->
+    <footer class="fixed-bottom">
+        da
+    </footer>
+    <!--END FOOTER-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script>
         $(document).ready(function () {
             var visible = false
             $("._dropdown").click(function () {
+                visible = !visible;
                 if (visible) {
-                    $("._dropdown-item").css("display","block");
-                    visible = true;
-                }else{
-                    $("._dropdown-item").css("display","none");
-                    visible = false;
+                    $("._dropdown-item").show();
+                } else {
+                    $("._dropdown-item").hide();
                 }
             });
         });
