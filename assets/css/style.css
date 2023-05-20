@@ -12,11 +12,11 @@
 }
 
 ._top-g{
-    top: 17vh;
+    top: 15.5%;
 }
 
 ._top-m{
-    top: 11vh;
+    top: 9%;
 }
 ._dropdown-item{
     display: none;
@@ -38,7 +38,7 @@ main{
 }
 
 ._img-ads{
-    width: 33vh;
+    width: 10rem;
 }
 
 footer{
