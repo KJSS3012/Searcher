@@ -6,14 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
     <link rel="icon" href="assets/img/icon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Resultado</title>
 </head>
 
 <body>
+     <!--HEADER-->
+     <header class="container-fluid d-flex align-items-center justify-content-between">
+         <div class="input-group pt-3 _search-div">
+            <a href="index.html">
+                <img src="assets/img/Result/Logo.svg" class="_img-logo">
+            </a>
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+            </div>
+            <input name="search" id="txt_consulta" placeholder="Digite aqui" type="text" class="form-control">
+            <div class="input-group-append">
+            <span class="input-group-text"><i class="bi bi-x"></i></span>
+            <span class="input-group-text"><i class="bi bi-camera"></i></span>
+            <span class="input-group-text"><i class="bi bi-mic"></i></span>
+            </div>
+        </div>
+        <section class="d-flex justify-content-end p-3 gap-2">
+            <div class="d-flex flex-column">
+                <img src="assets/img/index/dropdown/more.svg" class="_dropdown position-relative _pointer _img-options"
+                    title="Mais opções">
+                <img src="assets/img/index/dropdown/image.svg"
+                    class="_dropdown-item position-absolute _top-m _pointer _img-options" title="Imagens">
+                <img src="assets/img/index/dropdown/video.svg"
+                    class="_dropdown-item position-absolute _top-g _pointer _img-options" title="Video">
+            </div>
+            <div>
+                <img src="assets/img/index/profile.svg" title="Perfil" class="_pointer _img-options">
+            </div>
+        </section>
+    </header>
+    <!--END HEADER-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var visible = false
+            $("._dropdown").click(function () {
+                visible = !visible;
+                if (visible) {
+                    $("._dropdown-item").show();
+                } else {
+                    $("._dropdown-item").hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

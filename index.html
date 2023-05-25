@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 
     <link rel="icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -36,23 +36,47 @@
     <main class="text-center">
         <h1 class="_title"><span>TIP</span>esquisa</h1>
 
-        <div class="input-group pt-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="bi bi-search"></i></span>
+        <form action="result.html">
+            <div class="input-group pt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                </div>
+                <input name="search" id="txt_consulta" placeholder="Digite aqui" type="text" class="form-control">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="bi bi-x"></i></span>
+                    <span class="input-group-text"><i class="bi bi-camera"></i></span>
+                    <span class="input-group-text"><i class="bi bi-mic"></i></span>
+                </div>
             </div>
-            <input name="search" id="txt_consulta" placeholder="Digite" type="text" class="form-control">
-            <div class="input-group-append">
-              <span class="input-group-text"><i class="bi bi-x"></i></span>
-              <span class="input-group-text"><i class="bi bi-camera"></i></span>
-              <span class="input-group-text"><i class="bi bi-mic"></i></span>
-            </div>
-          </div>
-        
+        </form>
 
-        <div class="pt-5 d-flex gap-md-5 gap-xs-2 align-items-center justify-content-center" id="ads">
+
+        <div class="d-lg-flex d-md-none pt-5 gap-md-3 gap-lg-5 flex-md-column flex-lg-row align-items-center justify-content-center" id="ads-example">
             <img src="assets/img/index/advertising/Prime.svg" title="Prime Video" class="_pointer _img-ads">
             <img src="assets/img/index/advertising/BK.svg" title="Burger King" class="_pointer _img-ads">
             <img src="assets/img/index/advertising/Americanas.svg" title="Americanas" class="_pointer _img-ads">
+        </div>
+
+        <div id="carouselExample" class="carousel slide _hidden pt-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/index/advertising/Prime.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/index/advertising/BK.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/index/advertising/Americanas.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
     <!--END MAIN-->
@@ -91,6 +115,25 @@
                 }
             });
         });
+    </script>
+    <script>
+        $(document).ready(function () {
+            function verificarLargura() {
+                var tam = $(window).width();
+
+                if (tam < 992) {
+                    $("#carouselExample").show();
+                } else {
+                    $("#carouselExample").hide();
+                    $("#ads-example").show();
+                }
+            }
+
+            verificarLargura();
+
+            $(window).on('resize', verificarLargura);
+        });
+
     </script>
 </body>
 

@@ -56,7 +56,14 @@ main{
 }
 
 ._img-ads{
-    width: 30%;
+    width: 40%;
+}
+
+._hidden{
+    display: none;
+}
+#ads-example{
+
 }
 
 footer{
@@ -67,15 +74,16 @@ footer{
     gap: 8%;
 }
 
-@media (max-width: 300em) {
-   #ads{
-    gap: 2%;
-    transition: 0.5s;
-   }
-}
-
 @media (max-width: 530px) {
     ._footer-info{
         flex-direction: column;
     }
+ }
+
+ ._img-logo{
+    width: 60%;
+ }
+
+ ._search-div{
+    width: 50%;
  }
