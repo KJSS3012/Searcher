@@ -6,30 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Resultado</title>
 </head>
 
 <body>
-     <!--HEADER-->
-     <header class="container-fluid d-flex align-items-center justify-content-between">
-         <div class="input-group pt-3 _search-div">
-            <a href="index.html">
-                <img src="assets/img/Result/Logo.svg" class="_img-logo">
-            </a>
+    <!--HEADER-->
+    <header class="container-fluid d-flex align-items-center justify-content-between pt-3">
+        <a href="index.html">
+            <img src="assets/img/Result/Logo.svg" class="_img-logo">
+        </a>
+
+        <div class="input-group _search-input">
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="bi bi-search"></i></span>
             </div>
             <input name="search" id="txt_consulta" placeholder="Digite aqui" type="text" class="form-control">
             <div class="input-group-append">
-            <span class="input-group-text"><i class="bi bi-x"></i></span>
-            <span class="input-group-text"><i class="bi bi-camera"></i></span>
-            <span class="input-group-text"><i class="bi bi-mic"></i></span>
+                <span class="input-group-text _d-none" id="_close"><i class="bi bi-x"></i></span>
+                <span class="input-group-text"><i class="bi bi-camera"></i></span>
+                <span class="input-group-text"><i class="bi bi-mic"></i></span>
             </div>
         </div>
+
         <section class="d-flex justify-content-end p-3 gap-2">
             <div class="d-flex flex-column">
                 <img src="assets/img/index/dropdown/more.svg" class="_dropdown position-relative _pointer _img-options"
@@ -46,11 +48,97 @@
     </header>
     <!--END HEADER-->
 
+    <!--MAIN-->
+    <main>
+        <section class="d-flex gap-2 _result-section">
+            <div class="d-flex gap-4">
+                <button class="_b-nav"><i class="bi bi-search"></i>&nbsp;Todos</button>
+            </div>
+            <div class="d-flex gap-4">
+                <button class="_b-nav"><i class="bi bi-image"></i>&nbsp;Imagens</button>
+            </div>
+            <div class="d-flex gap-4">
+                <button class="_b-nav"><i class="bi bi-camera-video"></i>&nbsp;Vídeos</button>
+            </div>
+            <div class="d-flex gap-4">
+                <button class="_b-nav"><i class="bi bi-newspaper"></i>&nbsp;Notícias</button>
+            </div>
+            <div class="d-flex gap-4">
+                <button class="_b-nav"><i class="bi bi-three-dots-vertical"></i>&nbsp;Mais</button>
+            </div>
+        </section>
+        <hr>
+        <section class="_result-section">
+            <div class="_link">
+                <h5>Patrocinado</h5>
+                <a href="#a" class="_visited">Resultado (Link visitado)</a>
+                <p>Lorem ipsum dolor sit amet. Qui voluptatem quos ut quidem nemo cum similique odit non corporis
+                    corporis aut reiciendis rerum? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos?</p>
+            </div>
+            <div class="_link">
+                <h5>Patrocinado</h5>
+                <a href="#">Resultado (Link não visitado)</a>
+                <p>Lorem ipsum dolor sit amet. Qui voluptatem quos ut quidem nemo cum similique odit non corporis
+                    corporis aut reiciendis rerum? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos?</p>
+            </div>
+            <div class="_link">
+                <a href="#r">Resultado (Link não visitado)</a>
+                <p>Lorem ipsum dolor sit amet. Qui voluptatem quos ut quidem nemo cum similique odit non corporis
+                    corporis aut reiciendis rerum? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos? In suscipit asperiores sed galisum dolores hic modi enim et tempore
+                    adipisci est nobis internos?</p>
+            </div>
+        </section>
+    </main>
+    <!--END MAIN-->
+
+    <!--FOOTER-->
+<nav aria-label="Page navigation example" id="_pagination" class="d-flex justify-content-center">
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<footer class="bot-0">
+    <p class="ps-2 pt-3 _pointer">Kaique e Nicolly</p>
+    <hr class="border-white border-3">
+    <section class="d-flex justify-content-between pe-5 ps-2">
+        <div class="d-flex _footer-info">
+            <p class="_pointer">Sobre</p>
+            <p class="_pointer">Publicidade</p>
+            <p class="_pointer">Negócios</p>
+        </div>
+        <div class="d-flex _footer-info">
+            <p class="_pointer">Privacidade</p>
+            <p class="_pointer">Termos</p>
+            <p class="_pointer">Configurações</p>
+        </div>
+    </section>
+</footer>
+<!--END FOOTER-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
-            var visible = false
+            var visible = false;
             $("._dropdown").click(function () {
                 visible = !visible;
                 if (visible) {
@@ -58,6 +146,22 @@
                 } else {
                     $("._dropdown-item").hide();
                 }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#txt_consulta").on("keyup", function () {
+                if ($("#txt_consulta").val() === "") {
+                    $("#_close").hide();
+                } else {
+                    $("#_close").show();
+                }
+            });
+
+            $("#_close").on("click", function () {
+                $("#txt_consulta").val("");
+                $("#_close").hide();
             });
         });
     </script>

@@ -33,17 +33,17 @@
     <!--END HEADER-->
 
     <!--MAIN-->
-    <main class="text-center">
+    <main class="text-center _main">
         <h1 class="_title"><span>TIP</span>esquisa</h1>
 
         <form action="result.html">
-            <div class="input-group pt-3">
+            <div class="input-group _search-input">
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="bi bi-search"></i></span>
                 </div>
                 <input name="search" id="txt_consulta" placeholder="Digite aqui" type="text" class="form-control">
                 <div class="input-group-append">
-                    <span class="input-group-text"><i class="bi bi-x"></i></span>
+                    <span class="input-group-text _d-none" id="_close"><i class="bi bi-x"></i></span>
                     <span class="input-group-text"><i class="bi bi-camera"></i></span>
                     <span class="input-group-text"><i class="bi bi-mic"></i></span>
                 </div>
@@ -57,7 +57,7 @@
             <img src="assets/img/index/advertising/Americanas.svg" title="Americanas" class="_pointer _img-ads">
         </div>
 
-        <div id="carouselExample" class="carousel slide _hidden pt-5">
+        <div id="carouselExample" class="carousel slide d-lg-none d-md-block pt-5">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/index/advertising/Prime.svg" class="d-block w-100" alt="...">
@@ -117,24 +117,21 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            function verificarLargura() {
-                var tam = $(window).width();
-
-                if (tam < 992) {
-                    $("#carouselExample").show();
-                } else {
-                    $("#carouselExample").hide();
-                    $("#ads-example").show();
-                }
+        $(document).ready(function() {
+          $("#txt_consulta").on("keyup", function() {
+            if ($("#txt_consulta").val() === "") {
+              $("#_close").hide();
+            } else {
+              $("#_close").show();
             }
+          });
 
-            verificarLargura();
-
-            $(window).on('resize', verificarLargura);
+          $("#_close").on("click",function(){
+            $("#txt_consulta").val("");
+            $("#_close").hide();
+          });
         });
-
-    </script>
+      </script>
 </body>
 
 </html>
